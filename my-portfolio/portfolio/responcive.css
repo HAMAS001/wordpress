@@ -1,0 +1,341 @@
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    font-size: 2rem;
+    color: #000;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .close-btn {
+    color: #000;
+    font-size: 2rem;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  #NAVBAR {
+    display: none;
+    width: 100%;
+    background: gold;
+    position: absolute;
+    /* top: 80px; */
+    right: 0px;
+    transition: 2s;
+    z-index: 1;
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+  }
+  @keyframes zoomInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+  }
+
+  #NAVBAR nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home-left img {
+    /* display: none; */
+    /* animation: none; */
+    box-shadow: 0 0 50px rgb(233, 195, 195);
+     width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    -webkit-animation-name: rotateInDownRight;
+    animation-name: rotateInDownRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes rotateInDownRight {
+    0% {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: rotate3d(0, 0, 1, 45deg);
+      transform: rotate3d(0, 0, 1, 45deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: none;
+      transform: none;
+      opacity: 1;
+    }
+  }
+  @keyframes rotateInDownRight {
+    0% {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: rotate3d(0, 0, 1, 45deg);
+      transform: rotate3d(0, 0, 1, 45deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: none;
+      transform: none;
+      opacity: 1;
+    }
+  }
+  .progress-bar {
+    width: 100%;
+  }
+  .contect-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-h1 {
+    text-align: center;
+    flex-basis: 400px;
+  }
+  .my-name {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .name {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+    justify-content: left;
+  }
+  .name input {
+    animation: name 2s 1 forwards;
+
+    width: 0;
+    left: 0;
+  }
+  @keyframes name {
+    to {
+      /* background-color: aqua; */
+      width: 100%;
+    }
+    from {
+      right: 100%;
+    }
+  }
+  .contect-icon i {
+    text-shadow: none;
+    margin-bottom: 5px;
+  }
+
+  #submit {
+    width: 50%;
+  }
+  .last-p {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .menu-btn {
+    display: block;
+    font-size: 2rem;
+    color: #000;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .close-btn {
+    color: #000;
+    font-size: 2rem;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  #NAVBAR {
+    display: none;
+    width: 400px;
+    background: gold;
+    position: absolute;
+    /* top: 80px; */
+    right: 0px;
+    transition: 2s;
+    z-index: 1;
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+  }
+  @keyframes zoomInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+  }
+
+  #NAVBAR nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home-left img {
+    box-shadow: 0 0 50px rgb(233, 195, 195);
+width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    -webkit-animation-name: rotateInDownRight;
+    animation-name: rotateInDownRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes rotateInDownRight {
+    0% {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: rotate3d(0, 0, 1, 45deg);
+      transform: rotate3d(0, 0, 1, 45deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: none;
+      transform: none;
+      opacity: 1;
+    }
+  }
+  @keyframes rotateInDownRight {
+    0% {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: rotate3d(0, 0, 1, 45deg);
+      transform: rotate3d(0, 0, 1, 45deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: none;
+      transform: none;
+      opacity: 1;
+    }
+  }
+  .progress-bar {
+    width: 100%;
+  }
+  .name {
+    width: 100%;
+  }
+
+  .footer-h1 {
+    text-align: center;
+    flex-basis: 400px;
+  }
+
+  .name input {
+    animation: name 2s 1 forwards;
+
+    width: 0;
+    left: 0;
+  }
+  @keyframes name {
+    to {
+      /* background-color: aqua; */
+      width: 100%;
+    }
+    from {
+      right: 100%;
+    }
+  }
+  .contect-icon i {
+    text-shadow: none;
+    margin-bottom: 5px;
+  }
+
+  #submit {
+    width: 50%;
+  }
+  .last-p {
+    margin-bottom: 50px;
+  }
+}

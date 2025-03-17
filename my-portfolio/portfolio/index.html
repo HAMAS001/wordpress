@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/portfolio/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="responcive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header container">
+        <div class="h-l-section">
+          <h1 class="logo">Portfolio<span>.</span></h1>
+        </div>
+        <div class="h-r-section">
+                   
+            <span class="menu-btn" onclick="openmenu()">&#9779</span>
+          <span class="close-btn" onclick="closemenu()">&#9746</span>
+
+          <div id="NAVBAR">
+            <nav>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#contect">Contect Me</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- home start -->
+      <section>
+        <div id="home" class="home-section container">
+          <div class="home-right">
+            <h1>Hello</h1>
+            <div class="contanier1">
+              <span> It,s HAMAS ANSARI </span>
+              <div class="text first-text">I'm a</div>
+              <div class="text sec-text">freelancer</div>
+            </div>
+            <a href="" class="btn">Download Cv</a>
+          </div>
+          <div class="home-left">
+            <img src="/portfolio/IMG-20241212-WA0018.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- intro start -->
+      <section>
+        <div data-aos="zoom-in">
+          <div id="about-me" class="about-me container">
+            <div class="about"></div>
+            <div class="me">
+              <h4>My Intro</h4>
+
+              <p>
+                Hello my name is <span>hamas ansari</span> and I from pakistan
+                and i am a muslime. i am a webdeveloper as well as i am student
+                of 12 standered pre medical. but i am well in programming so
+                that i can make website.As a front end web developer i am well
+                up in my work .
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skill start -->
+      <section
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        id="skill"
+        class="my-skill"
+      >
+        <div class="skill">
+          <h1>My skill</h1>
+        </div>
+        <div class="progress-bar">
+          <div class="bar">
+            <div class="subject">
+              <span>HTML</span>
+            </div>
+            <div class="bar-line html">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="subject">
+              <span>Css</span>
+            </div>
+            <div class="bar-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="subject">
+              <span>JS</span>
+            </div>
+            <div class="bar-line js">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="subject">
+              <span>Bootstrap</span>
+            </div>
+            <div class="bar-line bootstrap">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="subject">
+              <span>React</span>
+            </div>
+            <div class="bar-line React">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer start -->
+      <footer id="contect" class="footer-main">
+        <div class="footer-h1">
+          <h1>Contect me</h1>
+          <span>get ib touch</span>
+        </div>
+        <div class="contect-me">
+          <div class="main-contect">
+            <h3>Get in touch</h3>
+            <p>
+              I am always happy to talk about new projects work together or
+              answer any questions you have about my work.
+            </p>
+            <div class="my-name">
+              <div class="contect-icon">
+                <i class="ri-user-3-fill"></i>
+                <i class="ri-map-pin-line"></i>
+                <i class="ri-mail-line"></i>
+              </div>
+              <div class="contect-content">
+                <h4>Name</h4>
+                <span>M hamas ansari</span>
+                <h4>Address</h4>
+                <span>pakistan nawab shah,sindh</span>
+                <h4>Email</h4>
+                <span>hamasansari86@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="">
+            <div class="name">
+              <div class="name1">
+                <label for="name">firstname</label>
+                <input type="name" placeholder="enter your firstname" />
+              </div>
+              <div class="name2">
+                <label for="name">lirstname</label>
+                <input type="name" placeholder="enter your lastname" />
+              </div>
+            </div>
+            <div class="name">
+              <div class="name1">
+                <label for="email">Email</label>
+                <input type="email" placeholder="enter your email" />
+              </div>
+              <div class="name2">
+                <label for="password">pasword</label>
+                <input type="password" placeholder="enter your password" />
+              </div>
+            </div>
+            <div class="name">
+              <div class="name1">
+                <label for="phone">phone</label>
+                <input type="phone" placeholder="enter your phone no" />
+              </div>
+            </div>
+            <input id="checkbox" type="checkbox" />
+            <input id="submit" type="submit" />
+          </form>
+        </div>
+        <p class="last-p">
+          Created By <span>hamas ansari</span>
+          <i class="ri-copyright-line"></i>| 2024 All rights reserved.
+        </p>
+      </footer>
+      <!-- /* From Uiverse.io by vinodjangid07 */  -->
+      <button id="top" class="button">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+          ></path>
+        </svg>
+      </button>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/portfolio/script.js"></script>
+  </body>
+</html>
